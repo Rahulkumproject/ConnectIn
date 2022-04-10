@@ -7,7 +7,6 @@ const session = require("express-session"); // PP
 const passport = require("passport"); // PP
 const passportLocalMongoose = require("passport-local-mongoose"); // PP
 const app = express();
-require("dotenv").config();
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.set("view engine", "ejs");
@@ -343,6 +342,6 @@ app.post("/answers/:questionId", function (req, res) {
   });
 });
 
-app.listen(process.env.PORT || 5000, function (req, res) {
-  console.log("Server started at port 5000");
+app.listen(process.env.PORT || 3000, function (req, res) {
+  console.log("Server started at port 3000");
 });
