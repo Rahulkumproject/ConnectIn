@@ -1,0 +1,322 @@
+body{
+  font-family: 'Ubuntu';
+  background-image: linear-gradient(to right, #0cff00c4 , #004bff7d);
+}
+a:hover{
+    text-decoration: none;
+}
+.manitora{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  margin-left: 0;
+}
+.navbtn{
+  margin-left: 3px;
+  border-color: #ff884b;
+  color: #ff884b;
+}
+.navbtn:hover{
+  background-color:#91ffa2;
+}
+.middle
+{
+  text-align: center;
+  padding:5% 15%;
+}
+.des-head{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 0;
+}
+.des-head-2{
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 0;
+}
+.network-image
+{
+  text-align: center;
+  padding: 7rem 15% 7%;
+}
+.network{
+  width:10rem;
+  height:auto;
+}
+.des-para{
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0;
+}
+.row{
+  margin-top: 8%;
+}
+#footer
+{
+
+  text-align: center;
+  margin: 5% 0% 0% 0%;
+    padding: 0%;
+    background-color: #f4f9f9;
+}
+.social-icon{
+  margin:3%;
+}
+.carousel{
+  padding: 5% 15%;
+}
+
+/* reg form */
+.form-control {
+	height: 40px;
+	box-shadow: none;
+	color: #ff884b;
+}
+.form-control:focus {
+	border-color: #ff884b;
+}
+.form-control, .btn {
+	border-radius: 3px;
+}
+.signup-form {
+	width: 450px;
+	margin: 0 auto;
+  	font-size: 15px;
+}
+.signup-form h2 {
+	color: black;
+	margin: 0 0 15px;
+	position: relative;
+	text-align: center;
+}
+.signup-form h2:before, .signup-form h2:after {
+	content: "";
+	height: 2px;
+	width: 30%;
+	background: #ffcb91;
+	position: absolute;
+	top: 50%;
+	z-index: 2;
+}
+.signup-form h2:before {
+	left: 0;
+}
+.signup-form h2:after {
+	right: 0;
+}
+.signup-form .hint-text {
+	margin-bottom: 30px;
+	text-align: center;
+}
+.signup-form form {
+  border-radius: 3px;
+  margin-bottom: 26px;
+  background: #9488bb;
+  padding: 33px;
+}
+.signup-form .form-group {
+	margin-bottom: 20px;
+}
+.signup-form input[type="checkbox"] {
+	margin-top: 3px;
+}
+.signup-form .submit {
+  background-color: #ff884b;
+  border-color: #ff884b;
+  color: white;
+	font-size: 16px;
+	font-weight: bold;
+	min-width: 140px;
+	outline: none !important;
+}
+.signup-form .row div:first-child {
+	padding-right: 10px;
+}
+.signup-form .row div:last-child {
+	padding-left: 10px;
+}
+.signup-form a {
+	color: #fff;
+	text-decoration: underline;
+}
+.signup-form a:hover {
+	text-decoration: none;
+}
+.signup-form form a {
+	text-decoration: none;
+}
+.signup-form form a:hover {
+	text-decoration: underline;
+}
+.line-separator {
+    background-color: black;
+    flex-grow: 5;
+    height: 1px
+}
+
+.or-label {
+    flex-grow: 1;
+    margin: 0 15px;
+    text-align: center
+}
+
+.form-control:focus {
+        border-color: #ff884b;
+        box-shadow: 0 0 0 0.2rem #ffcb91;
+
+}
+
+
+
+/*Ask page*/
+.ask{
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.askbtn{
+  border-color: #ff884b;
+  background-color:#ff884b;
+  color:white;
+}
+.askbtn:hover{
+  background-color:#ffcb91;
+  border-color: #ffcb91;
+}
+.ask-div{
+  padding:2% 20% 2% 20%
+}
+
+/* discussion page */
+.query-box{
+
+  margin:3% 15%;
+  padding: 2% 2%;
+  background-color:#ffcb91;
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+}
+.query-box img{
+  border-radius: 100%;
+  position: relative;
+  display: inline-block;
+  bottom:1.4rem;
+  width:8%;
+  height: auto;
+  margin-right: 1%;
+}
+.query-box .name{
+  margin: 0px;
+  padding: 0;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color:black;
+}
+.query-box .branch{
+  margin: 0px;
+  padding: 0;
+  position: relative;
+  bottom:5px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.query-box .quest{
+  position: relative;
+  bottom: 15px;
+  font-size: 1.5rem;
+}
+.query-box .row{
+  margin: 1% 1% -1% 1%;
+}
+ .action{
+  display: inline-block;
+}
+.query-box .number{
+  margin-left: 3px;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+/* answers page */
+.answer-box{
+
+  margin:1% 18% 1% 18%;
+  padding: 1% 2%;
+  background-color:#f4f9f9;
+  border-radius: 15px;
+
+}
+
+/* profile page */
+.profile-div{
+
+  margin: 3% 15% 0% 15%;
+
+}
+.profile-img{
+
+  background-color:#ffcb91;
+  padding:2% 3% 0% 3%;
+  border-radius: 15px 0px 0px 15px;
+  -moz-border-radius: 15px;
+  text-align: center;
+}
+.profile-img img{
+  margin-top: 1.75rem;
+  border-radius: 100%;
+  width:60%;
+  height: auto;
+}
+.profile-img p{
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 3%;
+}
+.profile-data{
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  background-color:#f4f9f9;
+  padding:2% 3% 2% 3%;
+  border-radius: 0px 15px 15px 0px;
+  -moz-border-radius: 15px;
+}
+.sortings{
+  text-align:left;
+  margin: 0% 15% 0% 15%;
+  color:#ffcb91;
+  position: relative;
+  top:1.5rem;
+}
+@media (max-width: 1028px) {
+
+  #title {
+    text-align: center;
+  }
+  .query-box{
+
+    margin:3% 1%;
+    padding: 2%;
+  }
+  .answer-box{
+
+    margin:3% 3%;
+    padding: 2% ;
+  }
+  .ask-div{
+    padding:2% 2% 2% 2%
+  }
+  .network-image
+  {
+    text-align: center;
+    padding: 7rem 1% 7%;
+  }
+  .profile-div{
+    margin:3% 1%;
+    padding: 2%;
+  }
+  .signup-form {
+  	width: 100%;
+  }
+
+}
+

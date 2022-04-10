@@ -1,0 +1,86 @@
+<%- include('partials/header') %> <%- include('partials/navbar') %>
+
+<div class="container-fluid network-image" style="padding: 5rem 15% 0% 15%">
+  <img
+    src="images/3.PNG"
+    class="network"
+    alt=""
+    style="width: 8rem; height: auto"
+  />
+  <p class="des-head" style="font-size: 2.5rem">ConnectIn</p>
+</div>
+
+<div class="signup-form">
+  <form action="/signup" method="post">
+    <h2>Signup</h2>
+
+    <div class="form-group">
+      <input
+        type="email"
+        class="form-control shadow-none"
+        name="username"
+        placeholder="Email"
+        required="required"
+      />
+    </div>
+    <div class="form-group">
+      <input
+        type="password"
+        class="form-control shadow-none"
+        name="password"
+        placeholder="Password"
+        required="required"
+      />
+    </div>
+
+    <div class="form-group">
+      <input
+        type="text"
+        class="form-control shadow-none"
+        name="name"
+        placeholder="Full Name"
+        required="required"
+      />
+    </div>
+    <div class="form-group">
+      <input
+        type="text"
+        class="form-control shadow-none"
+        name="college"
+        placeholder="College"
+        required="required"
+      />
+    </div>
+
+    <div class="form-group">
+      <input
+        type="text"
+        class="form-control shadow-none"
+        list="branches"
+        name="branch"
+        placeholder="Branch"
+        required="required"
+      />
+      <datalist id="branches">
+        <option value="CSE"></option>
+        <option value="ECE"></option>
+        <option value="Electrical"></option>
+        <option value="Mechanical"></option>
+        <option value="Civil"></option>
+        <option value="Chemical"></option>
+        <option value="MSME"></option>
+      </datalist>
+    </div>
+
+    <div class="form-group">
+      <button
+        type="submit"
+        class="btn btn-warning btn-lg btn-block shadow-none submit"
+      >
+        Register Now
+      </button>
+    </div>
+  </form>
+</div>
+
+<%- include('partials/footer') %>

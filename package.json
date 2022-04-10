@@ -1,0 +1,27 @@
+{
+  "name": "manitora",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Akshat",
+  "license": "ISC",
+  "dependencies": {
+    "alert": "^5.0.10",
+    "body-parser": "^1.19.0",
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "express-flash": "0.0.2",
+    "express-session": "^1.17.1",
+    "mongoose": "^5.12.0",
+    "mongoose-encryption": "^2.0.3",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^6.1.0",
+    "popups": "^1.1.3"
+  },
+  "description": ""
+}

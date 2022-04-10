@@ -1,0 +1,35 @@
+<%- include('partials/header') %> <%- include('partials/navbar') %>
+
+<div
+  class="container-fluid network-image"
+  style="padding: 5rem 15% 0% 15%; margin: 0"
+>
+  <img
+    src="images/1.PNG"
+    class="network"
+    alt=""
+    style="width: 8rem; height: auto"
+  />
+  <p class="des-head" style="font-size: 2.5rem">ASK</p>
+</div>
+
+<div class="container-fluid ask-div" style="" ;>
+  <form class="" action="/ask" method="post">
+    <div class="form-group" style="margin-bottom: 0.5rem">
+      <label for="exampleFormControlTextarea1" class="ask"
+        >Have a Doubt? We are Here</label
+      >
+      <textarea
+        class="form-control"
+        placeholder="Type your Question here"
+        style="height: 100px"
+        name="quest"
+        id="exampleFormControlTextarea1"
+        rows="5"
+      ></textarea>
+    </div>
+    <button type="submit" class="btn btn-warning askbtn shadow-none">
+      Ask
+    </button>
+  </form>
+</div>

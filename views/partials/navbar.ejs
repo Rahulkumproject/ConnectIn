@@ -1,0 +1,57 @@
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="/images/3.png" alt="" width="60" height="31">
+    </a>
+    <a class="navbar-brand manitora" href="/">ConnectIn</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div  >
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " href="/discussion">Discuss</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/ask">Ask</a>
+          </li>
+        </ul>
+
+      </div>
+      <div class="navbar-collapse justify-content-end" >
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <% if(isauth==0){ %>
+            <li class="nav-item ">
+              <a href="signup">
+                <button class="btn btn-outline-warning navbtn shadow-none" type="submit">Signup</button>
+              </a>
+            </li>
+            <li class="nav-item ">
+              <a href="login">
+                <button class="btn btn-outline-warning navbtn shadow-none" type="submit">Login</button>
+              </a>
+            </li>
+          <% } else { %>
+            <% if(isauth==1){ %>
+              <li class="nav-item">
+                <a class="nav-link " href=<%= "/profile/"+currUser._id %> style="font-weight:600;font-size:1.1rem";><%=currUser.name%></a>
+              </li>
+          <%  } %>
+
+            <li class="nav-item ">
+              <a href="/logout">
+                <button class="btn btn-outline-warning navbtn shadow-none" type="submit">Logout</button>
+              </a>
+            </li>
+          <% } %>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</nav>
