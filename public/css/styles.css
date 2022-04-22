@@ -1,6 +1,6 @@
 body{
   font-family: 'Ubuntu';
-  background-image: linear-gradient(to right, #0cff00c4 , #004bff7d);
+  background-image: url("../images/discussion.jpg");
 }
 a:hover{
     text-decoration: none;
@@ -26,6 +26,7 @@ a:hover{
 .des-head{
   font-family: 'Montserrat', sans-serif;
   font-size: 4rem;
+  color: white;
   font-weight: 700;
   margin: 0;
 }
@@ -172,6 +173,7 @@ a:hover{
 .ask{
   font-size: 1.5rem;
   font-weight: 700;
+  color: white;
 }
 .askbtn{
   border-color: #ff884b;
