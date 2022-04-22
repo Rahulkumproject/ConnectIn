@@ -1,6 +1,16 @@
 body{
   font-family: 'Ubuntu';
   background-image: url("../images/discussion.jpg");
+  
+}
+.btn:not(:disabled):not(.disabled) {
+  cursor: pointer;
+  background-color: #000000;
+}
+.btn-outline-warning:hover {
+  color: #e4f0fc;
+  /* background-color: #ffc107; */
+  border-color: #ffc107;
 }
 a:hover{
     text-decoration: none;
