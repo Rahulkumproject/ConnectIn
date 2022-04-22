@@ -24,8 +24,6 @@ app.use(
 
 app.use(passport.initialize());
 app.use(passport.session());
-// mongodb+srv://admin-akshat:test123@cluster0.puf7o.mongodb.net/manitoraDB?retryWrites=true&w=majority
-// mongoose.connect("mongodb://localhost:27017/manitoraDB",{useNewUrlParser:true,useUnifiedTopology:true});
 mongoose.connect(
   "mongodb+srv://Rahulkumar:Rahulkumar@connectin.flwd7.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
   { useNewUrlParser: true }
@@ -234,40 +232,7 @@ app.get("/profile/:userID", function (req, res) {
     res.redirect("/login");
   }
 });
-// app.get("/changepassword",function(req,res)
-// {
-//   var isauth=0;
-//   var currUser;
-//   if(req.isAuthenticated()){
-//     isauth=1;currUser=req.user;
-//   res.render("changepassword",{isauth:isauth,currUser:currUser});
-// } else{
-//   res.redirect("/login");
-// }
-// });
-// app.post("/changepassword",function(req,res){
-//   console.log(req.body);
-//   var username=req.body.username;
-//   var oldpassword=req.body.oldpassword;
-//   var newpassword=req.body.newpassword;
-//   //console.log(username,oldpassword,newpassword);
-//   if(req.isAuthenticated()&&username==currUser.username){
-//     User.find({"username":currUser.username},function(err,user){
-//       console.log(user);
-//        user.changePassword(oldpassword,newpassword,function(err,user){
-//         if(err){
-//           console.log(err);
-//           res.redirect("/changepassword");
-//         } else{
-//           user.save();
-//           res.redirect("/discussion");
-//         }
-//       });
-//     });
-//   } else {
-//     res.redirect("/login");
-//   }
-// });
+
 app.post("/signup", function (req, res) {
   User.register(
     {
@@ -284,11 +249,6 @@ app.post("/signup", function (req, res) {
         res.redirect("/signup");
       } else {
         passport.authenticate("local")(req, res, function () {
-          //isauth=1;
-          // User.findOne({'username':req.body.username},function(err,foundUser){
-          //   currUser=foundUser;
-          //   //console.log(currUser);
-          // });
           res.redirect("/discussion");
         });
       }
@@ -307,11 +267,6 @@ app.post("/login", function (req, res) {
       res.redirect("login");
     } else {
       passport.authenticate("local")(req, res, function () {
-        // isauth=1;
-        // User.findOne({'username':req.body.username},function(err,foundUser){
-        //   currUser=foundUser;
-        //   //console.log(currUser);
-        // });
         res.redirect("/discussion");
       });
     }

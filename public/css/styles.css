@@ -191,7 +191,7 @@ a:hover{
 
   margin:3% 15%;
   padding: 2% 2%;
-  background-color:#ffcb91;
+  background-color: #daebff;
   border-radius: 15px;
   -moz-border-radius: 15px;
 }
@@ -275,10 +275,13 @@ a:hover{
   text-align: center;
   font-size: 1.5rem;
   font-weight: 600;
-  background-color:#f4f9f9;
-  padding:2% 3% 2% 3%;
-  border-radius: 0px 15px 15px 0px;
-  -moz-border-radius: 15px;
+  background-color: #f4f9f9;
+  padding: 2% 3% 2% 3%;
+  border-radius: 15px;
+  /* -moz-border-radius: 15px; */
+  display: inline-block;
+  margin-left: 185px;
+  margin-top: 20px;
 }
 .sortings{
   text-align:left;
