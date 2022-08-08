@@ -117,41 +117,41 @@ app.get("/discussion", function (req, res) {
     res.redirect("/login");
   }
 });
-app.get("/discussion/:sorting", function (req, res) {
-  var sortType = req.params.sorting;
-  var isauth = 0;
-  var currUser;
-  if (req.isAuthenticated()) {
-    isauth = 1;
-    currUser = req.user;
-    Question.find({}, function (err, questions) {
-      if (err) {
-        console.log(err);
-      } else {
-        questions.sort(function (a, b) {
-          if (sortType == "Most Viewed") {
-            return a.views < b.views ? -1 : a.views > b.views ? 1 : 0;
-          } else if (sortType == "Most Liked") {
-            return a.likes < b.likes ? -1 : a.likes > b.likes ? 1 : 0;
-          } else if (sortType == "Most Answered") {
-            return a.answer.length < b.answer.length
-              ? -1
-              : a.answer.length > b.answer.length
-              ? 1
-              : 0;
-          }
-        });
-        res.render("discussion", {
-          questions: questions,
-          isauth: isauth,
-          currUser: currUser,
-        });
-      }
-    });
-  } else {
-    res.redirect("/login");
-  }
-});
+// app.get("/discussion/:sorting", function (req, res) {
+//   var sortType = req.params.sorting;
+//   var isauth = 0;
+//   var currUser;
+//   if (req.isAuthenticated()) {
+//     isauth = 1;
+//     currUser = req.user;
+//     Question.find({}, function (err, questions) {
+//       if (err) {
+//         console.log(err);
+//       } else {
+//         questions.sort(function (a, b) {
+//           if (sortType == "Most Viewed") {
+//             return a.views < b.views ? -1 : a.views > b.views ? 1 : 0;
+//           } else if (sortType == "Most Liked") {
+//             return a.likes < b.likes ? -1 : a.likes > b.likes ? 1 : 0;
+//           } else if (sortType == "Most Answered") {
+//             return a.answer.length < b.answer.length
+//               ? -1
+//               : a.answer.length > b.answer.length
+//               ? 1
+//               : 0;
+//           }
+//         });
+//         res.render("discussion", {
+//           questions: questions,
+//           isauth: isauth,
+//           currUser: currUser,
+//         });
+//       }
+//     });
+//   } else {
+//     res.redirect("/login");
+//   }
+// });
 app.post("/discussion", function (req, res) {
   res.redirect("/discussion/" + req.body.sortType);
 });
